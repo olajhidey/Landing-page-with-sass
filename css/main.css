@@ -6,10 +6,18 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*
+
+    Initializing variable of name colors
+
+*/
+/*
     SASS functions
 */
 /*
     SASS mixins
+*/
+/*
+    Initializing Media Queries in SASS and the use of mixins
 */
 /*
 
@@ -35,6 +43,10 @@ body #bg {
   height: 100%;
   z-index: -1;
   position: absolute;
+  /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 }
 
 @media (min-width: 840px) {
@@ -50,6 +62,13 @@ body header a {
   padding: 15px;
   display: block;
   text-transform: uppercase;
+}
+
+main {
+  /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 }
 
 @media (min-width: 840px) {
@@ -70,6 +89,10 @@ main section#card {
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 80%;
+  /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 }
 
 @media (min-width: 840px) {
@@ -114,6 +137,10 @@ main section#primary {
   color: #fff;
   padding: 15px;
   text-align: center;
+  /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 }
 
 @media (min-width: 840px) {
@@ -128,6 +155,10 @@ main section#primary h1 {
   font-size: 3em;
   margin-top: 10px;
   text-transform: uppercase;
+  /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 }
 
 @media (min-width: 840px) {
@@ -153,6 +184,10 @@ main section#primary a {
   text-align: center;
   margin: 50px auto 0 auto;
   padding: 15px;
+  /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 }
 
 @media (min-width: 840px) {

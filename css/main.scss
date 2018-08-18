@@ -4,7 +4,15 @@
 
 
 */
+
+//Import of google font family montserrat from Google -> https://fonts.googleapis.com
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*
+
+    Initializing variable of name colors
+
+*/
 $colors :(
     primary : #005dff,
     accent:  #ff1aff,
@@ -27,9 +35,20 @@ $borders: 15px;
     SASS mixins
 */
 
+
+
 $desktop : 840px;
 
+/*
+    Initializing Media Queries in SASS and the use of mixins
+*/
+
 @mixin desktop{
+
+    /*
+        Telling the browser when it gets to a breakpoint of $desktop which is 840px as we declared above 
+        it should perform the @content functions
+    */
 
     @media(min-width: #{$desktop}) {
         @content;
@@ -54,12 +73,15 @@ body{
     margin: 0;
 
     #bg {
+        // addition for clip-path and some other CSS styling
         clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
         background-color: color(primary);
         width: 100%;
         height: 100%;
         z-index: -1;
         position: absolute;
+
+        // Our media Query mixin in action
 
         @include desktop{
             clip-path: polygon( 0 0,75% 0, 55% 100%, 0 100%);
